@@ -46,10 +46,11 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/title_profile"
-            android:textSize="25sp"
+            android:fontFamily="@font/evelyn"
             android:gravity="center"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:text="@string/title_profile"
+            android:textSize="25sp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -63,7 +64,7 @@
                 android:id="@+id/text_view_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/text_nombre"/>
+                android:hint="@string/text_nombre" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -78,7 +79,7 @@
                 android:id="@+id/text_view_apellido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/text_apellido"/>
+                android:hint="@string/text_apellido" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -93,7 +94,7 @@
                 android:id="@+id/text_view_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/user"/>
+                android:hint="@string/user" />
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>

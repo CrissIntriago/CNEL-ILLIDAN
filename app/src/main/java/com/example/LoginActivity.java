@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private Boolean okSession = Boolean.FALSE;
     private Persona persona = new Persona(Utils.NOMBRE_ADMIN, Utils.NOMBRE_ADMIN, 0, "", "", Utils.PASS_ADMIN,
-            "", true, "", "");
+            "", true, "", "", "1");
     private MyOpenHelper myOpenHelper;
 
     @Override
@@ -83,11 +83,11 @@ public class LoginActivity extends AppCompatActivity {
 
     public Boolean validar() {
         if (text_user.getText().toString().isEmpty()) {
-            Toast.makeText(getBaseContext(), "Ingrese un usuario", Toast.LENGTH_LONG).show();
+            Toast.makeText(getBaseContext(), "Ingrese un usuario \uD83D\uDE15", Toast.LENGTH_LONG).show();
             return false;
         }
         if (text_pass.getText().toString().isEmpty()) {
-            Toast.makeText(getBaseContext(), "Ingrese una contraseña", Toast.LENGTH_LONG).show();
+            Toast.makeText(getBaseContext(), "Ingrese una contraseña \uD83D\uDE15", Toast.LENGTH_LONG).show();
             return false;
         }
         return true;
@@ -122,6 +122,7 @@ public class LoginActivity extends AppCompatActivity {
         editor.putString(Utils.KEY_PASS, persona.getPassword());
         editor.putString(Utils.KEY_NAME, persona.getNombre());
         editor.putString(Utils.KEY_LASTNAME, persona.getApellido());
+        editor.putString(Utils.KEY_ROL, persona.getApellido());
         editor.putBoolean(Utils.KEY_OK_SESSION, okSession);
         editor.commit();
     }
@@ -134,7 +135,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void intentActivity() {
-        Toast.makeText(getBaseContext(), "Bienvenido " + persona.getPrimerNombrePrimerApellido(), Toast.LENGTH_LONG).show();
+        Toast.makeText(getBaseContext(), "Bienvenido " + persona.getPrimerNombrePrimerApellido() + " \uD83D\uDE01", Toast.LENGTH_LONG).show();
         Intent intent = new Intent(getApplicationContext(), Index.class);
         intent.putExtra("name_user", persona.getNombre());
         startActivityForResult(intent, 0);

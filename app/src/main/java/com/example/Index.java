@@ -84,6 +84,9 @@ public class Index extends AppCompatActivity implements NavigationView.OnNavigat
                 break;
             case R.id.nav_home:
                 break;
+            case R.id.nav_registro_usuario:
+                startActivity(new Intent(this, RegisterUser.class));
+                break;
             default:
                 break;
         }

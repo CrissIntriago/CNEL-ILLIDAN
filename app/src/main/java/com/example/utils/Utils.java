@@ -10,6 +10,7 @@ public class Utils {
     //DATA USER ADMIN
     public static final String NOMBRE_ADMIN = "admin";
     public static final String PASS_ADMIN = "admin";
+    public static final String PASS_DEFAULT = "123";
 
 
     //CREDENTIALS
@@ -17,6 +18,7 @@ public class Utils {
     public static final String KEY_PASS = "user_pass";
     public static final String KEY_NAME = "user_name";
     public static final String KEY_LASTNAME = "user_lastname";
+    public static final String KEY_ROL = "user_rol";
     public static final String KEY_OK_SESSION = "ok_session";
 
 
@@ -43,6 +45,7 @@ public class Utils {
     public static final String CAMPO_USER_CLAVE = "clave";
     public static final String CAMPO_USER_IDENTIFICACION = "identificacion";
     public static final String CAMPO_USER_APELLIDO = "apellido";
+    public static final String CAMPO_USER_ROL = "rol";
 
     public static final String CREAR_TABLA_CATEGORIA = "CREATE TABLE " + TABLA_CATEGORIA +
             "(" + CAMPO_ID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE," + CAMPO_NOMBRE + " VARCHAR DEFAULT 350," + CAMPO_DESCRIPCION + " TEXT)";
@@ -54,7 +57,7 @@ public class Utils {
     //QUERY USUARIO
     public static final String CREATE_TABLE_USER = "CREATE TABLE " + TABLE_USER + "(" + CAMPO_ID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE, "
             + CAMPO_USER + " TEXT, " + CAMPO_NOMBRE + " TEXT, " + CAMPO_USER_CLAVE + " TEXT, "
-            + CAMPO_USER_IDENTIFICACION + " TEXT, " + CAMPO_USER_APELLIDO + " TEXT)";
+            + CAMPO_USER_IDENTIFICACION + " TEXT, " + CAMPO_USER_APELLIDO + " TEXT, " + CAMPO_USER_ROL + " INTEGER)";
 
     public static final String query_select_user = "SELECT u." + CAMPO_USER
             + ", u." + CAMPO_NOMBRE + ", u." + CAMPO_USER_IDENTIFICACION +

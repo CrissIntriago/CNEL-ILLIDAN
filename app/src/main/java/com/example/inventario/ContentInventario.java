@@ -17,6 +17,7 @@ import android.widget.Button;
 
 import com.example.Index;
 import com.example.Model.Persona;
+import com.example.RegisterUser;
 import com.example.activity.AboutUsActivity;
 import com.example.activity.ConfigurationActivity;
 import com.example.activity.ProfileActivity;
@@ -109,6 +110,9 @@ public class ContentInventario extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.nav_home:
                 startActivity(new Intent(this, Index.class));
+                break;
+            case R.id.nav_registro_usuario:
+                startActivity(new Intent(this, RegisterUser.class));
                 break;
             default:
                 break;

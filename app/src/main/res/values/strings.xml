@@ -55,7 +55,16 @@
     <!--CREDENTIALS-->
     <string name="credentials">user_value</string>
 
-    <!--CREDENTIALS-->
-    <string name="title_profile">Datos de Usuario</string>
+    <!--DATA USER-->
+    <string name="title_profile">Datos de Usuario 😄</string>
+    <string name="title_about_us">Quiénes Somos 😎</string>
+
+    <!--REGISTER USER-->
+    <string name="title_register_user">Registro de Usuario 😄</string>
+    <string name="label_name_user">Usuario</string>
+    <string name="label_lastname_user">Apellido</string>
+    <string name="label_name">Nombre</string>
+    <string name="label_identification">Identificación</string>
+    <string name="label_rol">Rol</string>
 
 </resources>

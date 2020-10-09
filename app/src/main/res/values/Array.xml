@@ -7,5 +7,9 @@
         <item> Duran </item>
         <item> Milagro </item>
     </string-array>
+    <string-array name="roles">
+        <item>Administrador</item>
+        <item>Invitado</item>
+    </string-array>
 
 </resources>

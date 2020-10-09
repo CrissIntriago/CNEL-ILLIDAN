@@ -13,12 +13,13 @@ public class Persona {
     private String ciudad;
     private String identificacion;
     private String user;
+    private String rol;
 
     public Persona() {
     }
 
     public Persona(String nombre, String apellido, Integer edad, String telefono,
-                   String email, String password, String fechaNacimiento, Boolean masculino, String ciudad, String identificacion) {
+                   String email, String password, String fechaNacimiento, Boolean masculino, String ciudad, String identificacion, String rol) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
@@ -29,6 +30,15 @@ public class Persona {
         this.masculino = masculino;
         this.ciudad = ciudad;
         this.identificacion = identificacion;
+        this.rol = rol;
+    }
+
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
     }
 
     public String getUser() {

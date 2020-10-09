@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.inventario.ConsultaProducto"></activity>
+<activity android:name="com.example.inventario.ConsultaProducto"/>
+<activity android:name="com.example.RegisterUser"/>
         <activity android:name="com.example.Index" />
         <activity android:name="com.example.contratos.activitys.RegistroOrdenes" />
         <activity android:name="com.example.inventario.DetalleProducto" />
