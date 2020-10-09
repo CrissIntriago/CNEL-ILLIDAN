@@ -60,18 +60,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_busqueda_prod"
-        android:layout_width="88dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="176dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
-        android:layout_weight="1"
-        android:background="@drawable/lupa"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/text_consulta_nombre"
         android:layout_width="295dp"
@@ -155,5 +143,11 @@
             android:layout_weight="1"
             android:text="@string/btnEliminar" />
     </LinearLayout>
+    <Button
+            android:text="Buscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btn_busqueda_prod"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="176dp" android:layout_marginEnd="40dp" android:layout_marginRight="40dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
