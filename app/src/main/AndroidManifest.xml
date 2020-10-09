@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.illidan">
+    package="com.example.illidan">
 
     <application
-            android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
-            android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"
-            android:theme="@style/AppTheme">
-        <activity android:name="com.example.Index"/>
-        <activity android:name="com.example.contratos.activitys.RegistroOrdenes"/>
-        <activity android:name="com.example.inventario.DetalleProducto"/>
-        <activity android:name="com.example.inventario.ListaProductos"/>
-        <activity android:name="com.example.activity.AboutUsActivity"/>
-        <activity android:name="com.example.activity.ConfigurationActivity"/>
-        <activity android:name="com.example.activity.ProfileActivity"/>
-        <activity android:name="com.example.inventario.CategoriaBeans"/>
-        <activity android:name="com.example.inventario.ProductoBeans"/>
-        <activity android:name="com.example.inventario.ContentInventario"/>
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.inventario.ConsultaProducto"></activity>
+        <activity android:name="com.example.Index" />
+        <activity android:name="com.example.contratos.activitys.RegistroOrdenes" />
+        <activity android:name="com.example.inventario.DetalleProducto" />
+        <activity android:name="com.example.inventario.ListaProductos" />
+        <activity android:name="com.example.activity.AboutUsActivity" />
+        <activity android:name="com.example.activity.ConfigurationActivity" />
+        <activity android:name="com.example.activity.ProfileActivity" />
+        <activity android:name="com.example.inventario.CategoriaBeans" />
+        <activity android:name="com.example.inventario.ProductoBeans" />
+        <activity android:name="com.example.inventario.ContentInventario" />
         <activity android:name="com.example.LoginActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <meta-data
-                android:name="preloaded_fonts"
-                android:resource="@array/preloaded_fonts"/>
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

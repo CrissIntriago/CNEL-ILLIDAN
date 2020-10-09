@@ -26,7 +26,7 @@ import com.example.utils.Utils;
 import com.google.android.material.navigation.NavigationView;
 
 public class ContentInventario extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
-    private Button btn_categoria, btn_inventario, btn_lista_prov;
+    private Button btn_categoria, btn_inventario, btn_lista_prov,btn_consulta;
     private String CREDENTIALS;
     Persona persona = new Persona();
     DrawerLayout drawerLayout;
@@ -40,9 +40,11 @@ public class ContentInventario extends AppCompatActivity implements View.OnClick
         btn_categoria = (Button) findViewById(R.id.btn_categoria);
         btn_inventario = (Button) findViewById(R.id.btn_inventario);
         btn_lista_prov = (Button) findViewById(R.id.btn_lista_inv);
+        btn_consulta = (Button) findViewById(R.id.btn_consulta_prod);
         btn_categoria.setOnClickListener(this);
         btn_inventario.setOnClickListener(this);
         btn_lista_prov.setOnClickListener(this);
+        btn_consulta.setOnClickListener(this);
         CREDENTIALS = getString(R.string.credentials);
         loadDataMenu(findViewById(R.id.drawer_layout_inventario), findViewById(R.id.nav_view_inventario), findViewById(R.id.toolbar_inventario), R.id.nav_inventario);
     }
@@ -70,6 +72,9 @@ public class ContentInventario extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.btn_inventario:
                 startActivity(new Intent(ContentInventario.this, ProductoBeans.class));
+                break;
+            case R.id.btn_consulta_prod:
+                startActivity(new Intent(ContentInventario.this, ConsultaProducto.class));
                 break;
             default:
                 startActivity(new Intent(ContentInventario.this, ListaProductos.class));

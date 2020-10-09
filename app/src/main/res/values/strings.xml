@@ -22,6 +22,9 @@
     <string name="cantidad">CANTIDAD</string>
     <string name="tituloListaProd">LISTA DE INVENTARIO</string>
     <string name="tituloDetalleProduct">DETALLE DE PRODUCTO SELECCIONADO</string>
+    <string name="consultaProducto">CONSULTAR PRODUCTO</string>
+    <string name="tituloConsulta">CONSULTA DE PRODUCTO DEL INVENTARIO</string>
+    <string name="btnEliminar">ELIMINAR</string>
 
     <!--PARA NOMBRE DEL PROYECTO-->
     <string name="menu_title">CnelEp</string>

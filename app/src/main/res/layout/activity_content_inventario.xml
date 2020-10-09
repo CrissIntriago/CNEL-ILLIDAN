@@ -41,10 +41,10 @@
                 android:id="@+id/btn_categoria"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginTop="76dp"
+                android:layout_marginTop="108dp"
                 android:background="@drawable/categorias"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintHorizontal_bias="0.16"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,21 +52,21 @@
                 android:id="@+id/btn_inventario"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginTop="300dp"
+                android:layout_marginTop="108dp"
                 android:background="@drawable/inventario"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintHorizontal_bias="0.827"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/btn_lista_inv"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginTop="512dp"
+                android:layout_width="144dp"
+                android:layout_height="139dp"
+                android:layout_marginTop="392dp"
                 android:background="@drawable/lista"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintHorizontal_bias="0.16"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -74,13 +74,13 @@
                 android:id="@+id/textView"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="68dp"
                 android:gravity="center_horizontal"
                 android:text="@string/inv_categoria"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintHorizontal_bias="0.16"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="RtlCompat" />
@@ -89,12 +89,12 @@
                 android:id="@+id/textView2"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="260dp"
+                android:layout_marginTop="48dp"
                 android:text="@string/inv_producto"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintHorizontal_bias="0.827"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="RtlCompat" />
@@ -103,15 +103,40 @@
                 android:id="@+id/textView3"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="484dp"
+                android:layout_marginTop="348dp"
                 android:text="@string/inv_lista"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintHorizontal_bias="0.16"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints,RtlCompat" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="328dp"
+                android:layout_marginEnd="44dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginRight="44dp"
+                android:text="@string/consultaProducto"
+                app:layout_constraintEnd_toEndOf="@+id/toolbar_inventario"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:id="@+id/btn_consulta_prod"
+                android:layout_width="132dp"
+                android:layout_height="137dp"
+                android:layout_marginTop="392dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginRight="36dp"
+                android:background="@drawable/busqueda"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
