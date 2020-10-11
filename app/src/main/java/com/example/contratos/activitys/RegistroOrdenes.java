@@ -20,6 +20,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.example.Index;
+import com.example.RegisterUser;
 import com.example.SQLLite.MyOpenHelper;
 import com.example.activity.AboutUsActivity;
 import com.example.activity.ConfigurationActivity;
@@ -190,6 +191,10 @@ public class RegistroOrdenes extends AppCompatActivity implements NavigationView
                 startActivity(new Intent(this, Index.class));
                 break;
             case R.id.nav_registro_usuario:
+                startActivity(new Intent(this, RegisterUser.class));
+                break;
+            case R.id.item_responsable:
+                startActivity(new Intent(this, AsignarResponsable.class));
                 break;
             case R.id.item_bienes:
                 startActivity(new Intent(this, AsignarBienes.class));

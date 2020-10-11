@@ -10,6 +10,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.example.Index;
+import com.example.RegisterUser;
 import com.example.activity.AboutUsActivity;
 import com.example.activity.ConfigurationActivity;
 import com.example.activity.ProfileActivity;
@@ -27,6 +28,7 @@ public class AsignarBienes extends AppCompatActivity implements NavigationView.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_asignar_bienes);
+        loadDataMenu(findViewById(R.id.drawer_bienes), findViewById(R.id.nav_view_bienes), findViewById(R.id.toolbar_bienes), R.id.item_bienes);
     }
 
     public void loadDataMenu(DrawerLayout drawerLayoutView, NavigationView navigationViewId, Toolbar toolbarId, int navId) {
@@ -69,6 +71,10 @@ public class AsignarBienes extends AppCompatActivity implements NavigationView.O
                 startActivity(new Intent(this, Index.class));
                 break;
             case R.id.nav_registro_usuario:
+                startActivity(new Intent(this, RegisterUser.class));
+                break;
+            case R.id.item_responsable:
+                startActivity(new Intent(this, AsignarResponsable.class));
                 break;
             default:
                 break;

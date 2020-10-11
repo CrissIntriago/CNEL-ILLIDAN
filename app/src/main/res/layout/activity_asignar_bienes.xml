@@ -3,24 +3,24 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/drawer_ordenes"
+        android:id="@+id/drawer_bienes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         tools:context="com.example.contratos.activitys.RegistroOrdenes"
         tools:openDrawer="start">
-   <!-- <com.google.android.material.navigation.NavigationView
-            android:id="@+id/nav_view_ordenes"
+   <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view_bienes"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="start"
             app:headerLayout="@layout/header"
-            app:menu="@menu/main_menu"/>-->
+            app:menu="@menu/main_menu"/>
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar_ordenes"
+                android:id="@+id/toolbar_bienes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#00008577"

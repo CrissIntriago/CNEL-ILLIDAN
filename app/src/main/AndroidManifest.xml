@@ -9,6 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name="com.example.contratos.activitys.AsignarResponsable">
+        </activity>
         <activity android:name="com.example.contratos.activitys.AsignarBienes">
         </activity>
         <activity android:name="com.example.inventario.ConsultaProducto"/>

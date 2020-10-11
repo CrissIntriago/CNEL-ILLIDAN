@@ -26,6 +26,7 @@ import com.example.activity.AboutUsActivity;
 import com.example.activity.ConfigurationActivity;
 import com.example.activity.ProfileActivity;
 import com.example.contratos.activitys.AsignarBienes;
+import com.example.contratos.activitys.AsignarResponsable;
 import com.example.contratos.activitys.RegistroOrdenes;
 import com.example.illidan.R;
 import com.example.inventario.ContentInventario;
@@ -203,6 +204,10 @@ public class RegisterUser extends AppCompatActivity implements NavigationView.On
                 startActivity(new Intent(this, Index.class));
                 break;
             case R.id.nav_registro_usuario:
+                startActivity(new Intent(this, RegisterUser.class));
+                break;
+            case R.id.item_responsable:
+                startActivity(new Intent(this, AsignarResponsable.class));
                 break;
             case R.id.item_bienes:
                 startActivity(new Intent(this, AsignarBienes.class));

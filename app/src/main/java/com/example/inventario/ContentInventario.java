@@ -21,6 +21,8 @@ import com.example.RegisterUser;
 import com.example.activity.AboutUsActivity;
 import com.example.activity.ConfigurationActivity;
 import com.example.activity.ProfileActivity;
+import com.example.contratos.activitys.AsignarBienes;
+import com.example.contratos.activitys.AsignarResponsable;
 import com.example.contratos.activitys.RegistroOrdenes;
 import com.example.illidan.R;
 import com.example.utils.Utils;
@@ -113,6 +115,12 @@ public class ContentInventario extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.nav_registro_usuario:
                 startActivity(new Intent(this, RegisterUser.class));
+                break;
+            case R.id.item_responsable:
+                startActivity(new Intent(this, AsignarResponsable.class));
+                break;
+            case R.id.item_bienes:
+                startActivity(new Intent(this, AsignarBienes.class));
                 break;
             default:
                 break;

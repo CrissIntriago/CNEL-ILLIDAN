@@ -28,6 +28,10 @@ public class Utils {
     public static final String DESCRIPCION = "descripcion";
     public static final String TABLE_ORDENES = "ordenes_contrato";
 
+    //DATA ORDENES
+    public static final String ID_ORDEN = "id_orden";
+    public static final String ID_RESPONSABLE = "id_responsable";
+    public static final String TABLE_RESPONSABLE_ORDEN = "responsable_contrato";
 
     //DATA USER ADMIN
     public static final String NOMBRE_ADMIN = "admin";
@@ -94,6 +98,9 @@ public class Utils {
             + NUM_ORDEN + " TEXT, " + NUM_ORDEN + " TEXT, " + FECHA_ACEPTACION + " TEXT, "
             + FECHA_RECEPCION + " TEXT, " + IDENTIFICACION + " TEXT, " + NOMBRE + " TEXT, "
             + DIRECCION + " TEXT, " + SERVICIO + " TEXT, " + DESCRIPCION + " TEXT)";
+
+    public static final String CREATE_TABLE_RESPONSABLE_ORDEN = "CREATE TABLE " + TABLE_RESPONSABLE_ORDEN + "(" + CAMPO_ID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE, "
+            + ID_ORDEN + " INTEGER, " + ID_RESPONSABLE + " INTEGER)";
 
     public static boolean vacio(EditText campo) {
         String dato = campo.getText().toString().trim();

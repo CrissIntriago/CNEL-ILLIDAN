@@ -21,6 +21,7 @@ import com.example.activity.AboutUsActivity;
 import com.example.activity.ConfigurationActivity;
 import com.example.activity.ProfileActivity;
 import com.example.contratos.activitys.AsignarBienes;
+import com.example.contratos.activitys.AsignarResponsable;
 import com.example.contratos.activitys.RegistroOrdenes;
 import com.example.illidan.R;
 import com.example.inventario.ContentInventario;
@@ -90,6 +91,9 @@ public class Index extends AppCompatActivity implements NavigationView.OnNavigat
                 break;
             case R.id.item_bienes:
                 startActivity(new Intent(this, AsignarBienes.class));
+                break;
+            case R.id.item_responsable:
+                startActivity(new Intent(this, AsignarResponsable.class));
                 break;
             default:
                 break;
