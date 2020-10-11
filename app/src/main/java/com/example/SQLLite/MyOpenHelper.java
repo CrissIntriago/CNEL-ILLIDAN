@@ -18,12 +18,14 @@ public class MyOpenHelper extends SQLiteOpenHelper {
         db.execSQL(Utils.CREAR_TABLA_CATEGORIA);
         db.execSQL(Utils.CREAR_TABLA_PRODUCTO);
         db.execSQL(Utils.CREATE_TABLE_USER);
+        db.execSQL(Utils.CREATE_TABLE_ORDENES);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int vesionAntigua, int versionNueva) {
         db.execSQL("DROP TABLE IF EXISTS " + Utils.TABLA_CATEGORIA);
         db.execSQL("DROP TABLE IF EXISTS " + Utils.TABLA_PRODUCTO);
+        db.execSQL("DROP TABLE IF EXISTS " + Utils.TABLE_ORDENES);
     }
 
 

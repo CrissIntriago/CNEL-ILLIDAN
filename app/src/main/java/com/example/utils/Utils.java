@@ -16,6 +16,18 @@ public class Utils {
     private static final int[] CASO_6 = {3, 2, 7, 6, 5, 4, 3, 2};
     private static final String NUMERIC_REGEX = "^[0-9]+$";
 
+    //DATA ORDENES
+    public static final String NUM_ORDEN = "num_orden";
+    public static final String NUM_FOLIO = "num_folio";
+    public static final String FECHA_RECEPCION = "fecha_recepcion";
+    public static final String FECHA_ACEPTACION = "fecha_aceptacion";
+    public static final String IDENTIFICACION = "identificacion";
+    public static final String NOMBRE = "nombre";
+    public static final String DIRECCION = "direccion";
+    public static final String SERVICIO = "servicio";
+    public static final String DESCRIPCION = "descripcion";
+    public static final String TABLE_ORDENES = "ordenes_contrato";
+
 
     //DATA USER ADMIN
     public static final String NOMBRE_ADMIN = "admin";
@@ -77,6 +89,11 @@ public class Utils {
     public static final String INSERT_ADMIN = "insert into " + TABLE_USER + "(" + CAMPO_USER + "," + CAMPO_NOMBRE + "," + CAMPO_USER_CLAVE
             + "," + CAMPO_USER_APELLIDO + " values(" + NOMBRE_ADMIN + ", " + PASS_ADMIN + ", " + NOMBRE_ADMIN + ", " + NOMBRE_ADMIN + ") ";
 
+
+    public static final String CREATE_TABLE_ORDENES = "CREATE TABLE " + TABLE_ORDENES + "(" + CAMPO_ID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE, "
+            + NUM_ORDEN + " TEXT, " + NUM_ORDEN + " TEXT, " + FECHA_ACEPTACION + " TEXT, "
+            + FECHA_RECEPCION + " TEXT, " + IDENTIFICACION + " TEXT, " + NOMBRE + " TEXT, "
+            + DIRECCION + " TEXT, " + SERVICIO + " TEXT, " + DESCRIPCION + " TEXT)";
 
     public static boolean vacio(EditText campo) {
         String dato = campo.getText().toString().trim();
