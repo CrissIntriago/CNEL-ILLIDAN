@@ -217,7 +217,7 @@
                         <EditText
                                 android:id="@+id/direccion"
                                 android:layout_width="match_parent"
-                                android:layout_height="33dp"
+                                android:layout_height="45dp"
                                 android:hint="Dirección"
                                 android:fontFamily="@font/evelyn"/>
                     </com.google.android.material.textfield.TextInputLayout>
@@ -233,7 +233,7 @@
                         <EditText
                                 android:id="@+id/servicio"
                                 android:layout_width="match_parent"
-                                android:layout_height="34dp"
+                                android:layout_height="59dp"
                                 android:hint="Servicio"
                                 android:fontFamily="@font/evelyn"/>
                     </com.google.android.material.textfield.TextInputLayout>
@@ -278,7 +278,7 @@
                                 app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
                         <androidx.appcompat.widget.AppCompatButton
-                                android:id="@+id/button_register_cancel"
+                                android:id="@+id/button_cancel"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="15dp"

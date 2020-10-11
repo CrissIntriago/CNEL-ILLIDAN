@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.example.Index;
 import com.example.RegisterUser;
+import com.example.contratos.activitys.AsignarBienes;
 import com.example.contratos.activitys.RegistroOrdenes;
 import com.example.illidan.R;
 import com.example.inventario.CategoriaBeans;
@@ -98,6 +99,9 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
                 break;
             case R.id.nav_registro_usuario:
                 startActivity(new Intent(this, RegisterUser.class));
+                break;
+            case R.id.item_bienes:
+                startActivity(new Intent(this, AsignarBienes.class));
                 break;
             default:
                 break;

@@ -40,6 +40,7 @@ public class RegistroOrdenes extends AppCompatActivity implements NavigationView
     NavigationView navigationView;
     Toolbar toolbar;
     Button button_register;
+    Button button_cancel;
     EditText num_orden;
     EditText num_folio;
     EditText fecha_recepcion;
@@ -102,7 +103,13 @@ public class RegistroOrdenes extends AppCompatActivity implements NavigationView
                 }
             }
         });
-
+        button_cancel = (Button) findViewById(R.id.button_cancel);
+        button_cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                loadData();
+            }
+        });
     }
 
     private void colocar_fecha(Boolean accion) {
@@ -183,6 +190,9 @@ public class RegistroOrdenes extends AppCompatActivity implements NavigationView
                 startActivity(new Intent(this, Index.class));
                 break;
             case R.id.nav_registro_usuario:
+                break;
+            case R.id.item_bienes:
+                startActivity(new Intent(this, AsignarBienes.class));
                 break;
             default:
                 break;

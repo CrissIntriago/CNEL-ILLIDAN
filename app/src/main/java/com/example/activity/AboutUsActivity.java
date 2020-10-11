@@ -15,6 +15,7 @@ import android.widget.ListView;
 
 import com.example.Index;
 import com.example.RegisterUser;
+import com.example.contratos.activitys.AsignarBienes;
 import com.example.contratos.activitys.RegistroOrdenes;
 import com.example.illidan.R;
 import com.example.inventario.ContentInventario;
@@ -77,6 +78,9 @@ public class AboutUsActivity extends AppCompatActivity implements NavigationView
                 break;
             case R.id.nav_registro_usuario:
                 startActivity(new Intent(this, RegisterUser.class));
+                break;
+            case R.id.item_bienes:
+                startActivity(new Intent(this, AsignarBienes.class));
                 break;
             default:
                 break;

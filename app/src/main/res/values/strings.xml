@@ -71,5 +71,7 @@
 
     <!--DATA CONTRATOS-->
     <string name="title_ordenes">Orden de Contrato</string>
+    <string name="title_bienes">Asignar Bienes - Orden</string>
+    <string name="title_responsable">Asignar Responsable</string>
 
 </resources>
