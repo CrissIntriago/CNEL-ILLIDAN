@@ -5,8 +5,18 @@ import android.widget.EditText;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Utils {
+
+    //PARAMETROS DE VALIDADOR DE CEDULA - RUC
+    private static final int[] PATTERN = {2, 1, 2, 1, 2, 1, 2, 1, 2};
+    private static final int[] CASO_9 = {4, 3, 2, 7, 6, 5, 4, 3, 2};
+    private static final int[] CASO_6 = {3, 2, 7, 6, 5, 4, 3, 2};
+    private static final String NUMERIC_REGEX = "^[0-9]+$";
+
+
     //DATA USER ADMIN
     public static final String NOMBRE_ADMIN = "admin";
     public static final String PASS_ADMIN = "admin";
@@ -83,6 +93,74 @@ public class Utils {
         Calendar c = Calendar.getInstance();
         c.setTime(fechaIngreso);
         return c.get(Calendar.YEAR);
+    }
+
+    public static synchronized boolean validateCCRuc(final String identificacion) {
+        if (identificacion == null) {
+            return false;
+        }
+        if (identificacion.trim().isEmpty()) {
+            return false;
+        }
+        if (!validateNumberPattern(identificacion)) {
+            return false;
+        }
+        if (identificacion.length() != 10 & identificacion.length() != 13) {
+            return false;
+        }
+        int[] coeficientes = null;
+        int indiceDigitoVerificador = 9;
+        int modulo = 11;
+
+        if ((identificacion.length() == 13) && !identificacion.substring(10, 13).equals("001")) {
+            return false;
+        }
+        if (identificacion.charAt(2) == '9') {
+            coeficientes = CASO_9;
+        } else if (identificacion.charAt(2) == '6') {
+            coeficientes = CASO_6;
+            indiceDigitoVerificador = 8;
+        } else if (identificacion.charAt(2) < '6') {
+            coeficientes = PATTERN;
+            modulo = 10;
+        }
+        return verify(identificacion.toCharArray(), coeficientes, indiceDigitoVerificador, modulo);
+    }
+
+    private static boolean verify(final char[] array, final int[] coeficientes,
+                                  final int indiceDigitoVerificador, final int modulo) {
+        if (coeficientes == null) {
+            return false;
+        }
+        int sum = 0;
+        int aux;
+        for (int i = 0; i < coeficientes.length; i++) {
+            aux = Integer.valueOf(String.valueOf(array[i])) * coeficientes[i];
+            if ((modulo == 10) && (aux > 9)) {
+                aux -= 9;
+            }
+            sum += aux;
+        }
+        int mod = sum % modulo;
+        mod = mod == 0 ? modulo : mod;
+        final int res = (modulo - mod);
+        Integer valorVerificar = null;
+        if (array.length == 13) {
+            valorVerificar = Integer.valueOf(String.valueOf(array[array.length - (13 - indiceDigitoVerificador)]));
+        } else if (array.length == 10) {
+            valorVerificar = Integer.valueOf(String.valueOf(array[array.length - (10 - indiceDigitoVerificador)]));
+        }
+        return res == valorVerificar;
+    }
+
+    public static synchronized boolean validateNumberPattern(final String valor) {
+        return validatePattern(NUMERIC_REGEX, valor);
+    }
+
+    public static synchronized boolean validatePattern(final String patron, final String valor) {
+        final Pattern patter = Pattern.compile(patron);
+        final Matcher matcher = patter.matcher(valor);
+        return matcher.matches();
     }
 
 }

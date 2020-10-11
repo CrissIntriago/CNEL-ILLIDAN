@@ -16,7 +16,8 @@ public class Ordenes implements Serializable {
     private String direccion;
     private String servicio;
     private String descripcion;
-    private Persona solicitante;
+    private String id_cliente;
+    private String nom_cliente;
     private Boolean estado;
     private String usuarioCreacion;
     private short periodo;
@@ -114,11 +115,19 @@ public class Ordenes implements Serializable {
         this.periodo = periodo;
     }
 
-    public Persona getSolicitante() {
-        return solicitante;
+    public String getId_cliente() {
+        return id_cliente;
     }
 
-    public void setSolicitante(Persona solicitante) {
-        this.solicitante = solicitante;
+    public void setId_cliente(String id_cliente) {
+        this.id_cliente = id_cliente;
+    }
+
+    public String getNom_cliente() {
+        return nom_cliente;
+    }
+
+    public void setNom_cliente(String nom_cliente) {
+        this.nom_cliente = nom_cliente;
     }
 }

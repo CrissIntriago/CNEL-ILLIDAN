@@ -33,6 +33,7 @@ public class LoginActivity extends AppCompatActivity {
     private String[] args;
     private EditText text_user;
     private EditText text_pass;
+
     private String CREDENTIALS;
 
     private Boolean okSession = Boolean.FALSE;

@@ -69,4 +69,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!--DATA CONTRATOS-->
+    <string name="title_ordenes">Orden de Contrato</string>
+
 </resources>

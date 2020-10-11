@@ -47,7 +47,7 @@ public class RegisterUser extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_user);
-        edit_name = findViewById(R.id.input_name_user);
+        edit_name = findViewById(R.id.id_ordenes);
         edit_lastname = findViewById(R.id.input_last_name_user);
         edit_name_user = findViewById(R.id.input_user);
         edit_identification = findViewById(R.id.input_identification);
